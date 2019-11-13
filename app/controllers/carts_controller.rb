@@ -1,7 +1,6 @@
 class CartsController < ApplicationController
 
   def show
-    pp enhanced
   end
 
   def add_item
