@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  http_basic_authenticate_with name: "Jungle", password: "book"
 
   def show
     @order = Order.find(params[:id])
