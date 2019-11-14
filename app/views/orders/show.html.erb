@@ -5,6 +5,13 @@
   </header>
 
   <div class="order-summary jumbotron">
+  <table border=1>
+ <% @order.line_items.each do |order| %>
+ <%= render 'order', order: order, user_detail: @order %>
+ 
+ <% end %>
+ </table>
+
     <h4>Thank you for your order!</h4>
   </div>
 
